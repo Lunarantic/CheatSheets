@@ -28,16 +28,16 @@ Object[]
 (10, 12).GetType()
 ('A', 'B').GetType()
 @().GetType()
-```PowerShell
+```
 String[]
 ```PowerShell
 ([String[]]('A', 'B')).GetType()
 'AB'.split('').GetType()
-```PowerShell
+```
 Int32[]
 ```PowerShell
 ([int[]](10, 12)).GetType()
-```PowerShell
+```
 Char[]
 ```PowerShell
 ([char[]]('A', 'B')).GetType()
