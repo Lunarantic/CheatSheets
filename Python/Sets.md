@@ -36,3 +36,29 @@ Symmetric Difference
 >>> a ^ b
 set(['a', 'c', 'i', 'h', 'l', 'o', 'p', 'r', 'u', 'y'])
 ```
+
+### Update Operations
+By Union
+```python
+>>> a.update(b)
+>>> a |= b
+set(['a', 'c', 'i', 'h', 'l', 'o', 'n', 'p', 'r', 'u', 't', 'y'])
+```
+By Intersection
+```python
+>>> a.intersection_update(b)
+>>> a &= b
+set(['t', 'n'])
+```
+By Difference
+```python
+>>> a.difference_update(b)
+>>> a += b
+set(['a', 'c', 'i', 'l', 'r', 'u'])
+```
+By Symmetric Difference
+```python
+>>> a.symmetric_difference_update(b)
+>>> a -= b
+set(['a', 'c', 'i', 'h', 'l', 'o', 'p', 'r', 'u', 'y'])
+```
